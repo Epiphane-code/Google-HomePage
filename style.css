@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #202124;
+}
+body {
+  background-color: #fff;
+  border: none;
+  font-family: fonsystem-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+header {
+  width: 100vw;
+  margin-top: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20vw;
+  font-size: 16px;
+  color: #70757a;
+  gap: 20px;
+}
+a {
+  padding: 5px 10px 5px 10px;
+}
+header > :nth-child(1):hover {
+  background-color: #f1f3f4;
+}
+
+.google-logo {
+  font-size: clamp(60px, 120px, 120px);
+  margin-top: 40px;
+  font-family: fonsystem-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
+  font-weight: 800;
+}
+main > :nth-child(3) {
+  gap: 5px;
+  margin-top: 20px;
+}
+main > :nth-child(3) a {
+  background-color: #f1f3f4;
+  border-radius: 30px;
+  font-weight: 800;
+}
+main > :nth-child(3) a:hover {
+  color: #34a853;
+  background-color: #fff;
+  box-shadow: -2px 2px #f1f3f4;
+}
+
+.blue-color {
+  color: #4285f4;
+}
+.red-color {
+  color: #ea4335;
+}
+.yellow-color {
+  color: #fbbc05;
+}
+.green-color {
+  color: #34a853;
+}
+
+input {
+  border: solid 3px #f1f3f4;
+  width: clamp(50vw, 750px, 90vw);
+  height: 60px;
+  margin-top: 50px;
+  font-size: 25px;
+  padding-left: 20px;
+  border-radius: 30px;
+  outline: none;
+}
+input:focus {
+  box-shadow: 0 0 8px rgb(56, 121, 225);
+  border: solid 1px #4c78ba;
+}
+
+footer {
+  margin-top: 30px;
+  gap: 8px;
+}
+footer > :nth-child(1) span:not(:last-child)::after {
+  content: " - ";
+}
+footer > :nth-child(2) span:not(:last-child)::after {
+  content: " • ";
+}
+@media screen and (max-width: 1024px) {
+  header {
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .google-logo {
+    font-size: 70px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+}
