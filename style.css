@@ -39,6 +39,7 @@ a {
 }
 header > :nth-child(1):hover {
   background-color: #f1f3f4;
+  border-radius: 10px;
 }
 
 .google-logo {
