@@ -101,6 +101,9 @@ footer > :nth-child(1) span:not(:last-child)::after {
 footer > :nth-child(2) span:not(:last-child)::after {
   content: " • ";
 }
+.list > :nth-child(1) {
+  list-style: none ;
+}
 @media screen and (max-width: 1024px) {
   header {
     justify-content: flex-end;
